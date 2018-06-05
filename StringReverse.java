@@ -5,11 +5,11 @@ public class StringReverse {
 		System.out.println(reverse("Rolex is expensive"));
 	}
 
-	public static String reverse(String input) {
-		if (input.length() == 0) {
-			return input;
+	public static String reverse(String str) {
+		if (str.length() == 0) {
+			return str;
 		}
 
-		return reverse(input.substring(1)) + input.charAt(0);
+		return reverse(str.substring(1)) + str.charAt(0);
 	}
 }
