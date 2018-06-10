@@ -25,7 +25,7 @@ public class Sudoku {
 
 				sudoku[currentRow][currentCol] = i;
 				solveSudoku(nextRow(currentRow, currentCol), nextCol(currentCol));
-				sudoku[currentRow][currentCol] = 0; // при връщането на рекурсията да върне и да попълна отново
+				sudoku[currentRow][currentCol] = 0; // при връщането на рекурсията да върне и да попълва отново
 			}
 		} else {
 			// като връща назад числото няма да е 0
