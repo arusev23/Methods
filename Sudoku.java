@@ -25,10 +25,10 @@ public class Sudoku {
 
 				sudoku[currentRow][currentCol] = i;
 				solveSudoku(nextRow(currentRow, currentCol), nextCol(currentCol));
-				sudoku[currentRow][currentCol] = 0; // при връщането на рекурсията да върне и да попълва отново
+				sudoku[currentRow][currentCol] = 0; // РїСЂРё РІСЂСЉС‰Р°РЅРµС‚Рѕ РЅР° СЂРµРєСѓСЂСЃРёСЏС‚Р° РґР° РІСЉСЂРЅРµ Рё РґР° РїРѕРїСЉР»РІР° РѕС‚РЅРѕРІРѕ
 			}
 		} else {
-			// като връща назад числото няма да е 0
+			// РєР°С‚Рѕ РІСЂСЉС‰Р° РЅР°Р·Р°Рґ С‡РёСЃР»РѕС‚Рѕ РЅСЏРјР° РґР° Рµ 0
 			solveSudoku(nextRow(currentRow, currentCol), nextCol(currentCol));
 		}
 
